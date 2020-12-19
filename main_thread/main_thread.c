@@ -23,7 +23,7 @@ void main_thread__data_load(const unsigned argc, char **argn, STABLO **koren, ST
 
 }
 
-void main_thread__stdout_print()
+void main_thread__stdout_print(STABLO *koren, STABLO *avl_koren)
 {
     // to do
 }
