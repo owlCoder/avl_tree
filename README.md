@@ -28,5 +28,12 @@
 ### Листинг модула 'avl_tree'
 
 ```c
-  
+  STABLO *desnaRotacija(STABLO *);
+  STABLO *levaRotacija(STABLO *);
+  STABLO *AVL_dodaj_u_stablo(STABLO *, int);
+
+  int veci(const int, const int);
+  int dubinaStabla(const STABLO *);
+
+  int balansirano(STABLO *);
 ```
