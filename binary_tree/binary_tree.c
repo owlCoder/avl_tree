@@ -67,28 +67,16 @@ int dubina_levog_podstabla(STABLO *cvor)
 { 
     if(cvor == NULL)
         return 0;
-
-    int dubina = 1;
-    while(cvor != NULL)
-    {
-        dubina++;
-        cvor = cvor -> levi;
-    }
-    return dubina;
+    else
+        return dubina_levog_podstabla(cvor -> levi) + 1;
 } 
 
 int dubina_desnog_podstabla(STABLO *cvor) 
 { 
     if(cvor == NULL)
         return 0;
-
-    int dubina = 1;
-    while(cvor != NULL)
-    {
-        dubina++;
-        cvor = cvor -> desni;
-    }
-    return dubina;
+    else
+        return dubina_desnog_podstabla(cvor -> desni) + 1;
 } 
 
 void print_tree(const unsigned l, const unsigned r, const char *situation)
