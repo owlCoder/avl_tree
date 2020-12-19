@@ -25,5 +25,14 @@ void main_thread__data_load(const unsigned argc, char **argn, STABLO **koren, ST
 
 void main_thread__stdout_print(STABLO *koren, STABLO *avl_koren)
 {
-    // to do
+    printf("\n%s balansiranja stabla\n\t", "Pre"); 
+    prikaz_stabla(koren); 
+    printf("\n\n");
+
+    printf("\n%s balansiranja stabla\n\t", "Posle"); 
+    prikaz_stabla(avl_koren); 
+    printf("\n\n");
+
+    print_tree(dubina_levog_podstabla(koren), dubina_desnog_podstabla(koren), "Pre");
+    print_tree(dubina_levog_podstabla(avl_koren), dubina_desnog_podstabla(avl_koren), "Posle");
 }
