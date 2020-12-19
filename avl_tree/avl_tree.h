@@ -18,4 +18,6 @@ STABLO *levaRotacija(STABLO *);
 int veci(const int, const int);
 int dubinaStabla(const STABLO *);
 
+int balansirano(STABLO *);
+
 #endif

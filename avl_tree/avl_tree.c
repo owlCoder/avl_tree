@@ -47,3 +47,11 @@ int dubinaStabla(const STABLO *cvor)
     else
         return cvor -> dubina;    
 }
+
+int balansirano(STABLO *cvor)
+{
+    if(cvor == NULL)
+        return 0;
+    else
+        return dubina(cvor -> levi) - dubina(cvor -> desni);    
+}
