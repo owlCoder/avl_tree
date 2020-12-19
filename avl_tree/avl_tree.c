@@ -53,5 +53,5 @@ int balansirano(STABLO *cvor)
     if(cvor == NULL)
         return 0;
     else
-        return dubina(cvor -> levi) - dubina(cvor -> desni);    
+        return dubinaStabla(cvor -> levi) - dubinaStabla(cvor -> desni);    
 }
