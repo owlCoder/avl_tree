@@ -60,8 +60,17 @@ int balansirano(STABLO *cvor)
 * binary_tree/binary_tree.c -> 
 * void dodaj_u_stablo(STABLO *, STABLO **)
 ***/
-STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int k)
+STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int broj)
 {
+    if(cvor == NULL)
+        return kreiraj_element(broj);
+    
+    if(broj < cvor -> broj)
+        cvor -> levi = AVL_dodaj_u_stablo(cvor -> levi, broj);
+    else if (broj > cvor -> broj)
+        cvor -> desni = AVL_dodaj_u_stablo(cvor -> desni, broj);
+    else
+        return cvor;
 
     return cvor;
 }
