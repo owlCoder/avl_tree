@@ -55,3 +55,13 @@ int balansirano(STABLO *cvor)
     else
         return dubinaStabla(cvor -> levi) - dubinaStabla(cvor -> desni);    
 }
+/***
+* Reimplementation of
+* binary_tree/binary_tree.c -> 
+* void dodaj_u_stablo(STABLO *, STABLO **)
+***/
+STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int k)
+{
+
+    return cvor;
+}
