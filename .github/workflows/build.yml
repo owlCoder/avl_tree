@@ -27,4 +27,4 @@ jobs:
 
       # Build project
       - name: avl
-        run: ./compile_run.sh
+        run: sh ./compile_run.sh
