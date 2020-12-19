@@ -64,8 +64,10 @@ void brisanje_stabla(STABLO **koren)
 
 int dubina_levog_podstabla(STABLO *cvor) 
 { 
-    int dubina = 0;
+    if(cvor == NULL)
+        return 0;
 
+    int dubina = 0;
     while(cvor != NULL)
     {
         dubina++;
@@ -76,6 +78,9 @@ int dubina_levog_podstabla(STABLO *cvor)
 
 int dubina_desnog_podstabla(STABLO *cvor) 
 { 
+    if(cvor == NULL)
+        return 0;
+
     int dubina = 0;
     while(cvor != NULL)
     {
