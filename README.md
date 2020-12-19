@@ -1,5 +1,5 @@
 # Програмски језици и структуре података
-#### AVL стабло
+### AVL стабло
 ###
 ```javascript
 Задатак је да унето бинарно стабло, програмски, ако је то потребно, 
@@ -9,7 +9,7 @@
 Покретање програма врши се извршавањем датотеке ./compile_run.sh
 ```
 
-## Листинг модула 'binary_tree'
+### Листинг модула 'binary_tree'
 
 ```c
   void init_stablo(STABLO **);
@@ -25,7 +25,7 @@
   void print_tree(const unsigned, const unsigned, const char *);
 ```
 
-## Листинг модула 'avl_tree'
+### Листинг модула 'avl_tree'
 
 ```c
   
