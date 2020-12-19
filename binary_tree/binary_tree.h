@@ -19,6 +19,7 @@
 typedef struct stablo_st
 {
     int broj;
+    int dubina;
     struct stablo_st *levi;
     struct stablo_st *desni;
 } STABLO;

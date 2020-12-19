@@ -11,6 +11,7 @@ STABLO *kreiraj_element(const int broj)
         exit(40);
     }
     novi -> broj = broj;
+    novi -> dubina = 1;
     novi -> levi = NULL;
     novi -> desni = NULL;
 
@@ -67,7 +68,7 @@ int dubina_levog_podstabla(STABLO *cvor)
     if(cvor == NULL)
         return 0;
 
-    int dubina = 0;
+    int dubina = 1;
     while(cvor != NULL)
     {
         dubina++;
@@ -81,7 +82,7 @@ int dubina_desnog_podstabla(STABLO *cvor)
     if(cvor == NULL)
         return 0;
 
-    int dubina = 0;
+    int dubina = 1;
     while(cvor != NULL)
     {
         dubina++;

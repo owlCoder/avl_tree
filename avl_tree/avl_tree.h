@@ -12,5 +12,10 @@
 
 #include "../binary_tree/binary_tree.h"
 
+STABLO *desnaRotacija(STABLO *);
+STABLO *levaRotacija(STABLO *);
+
+int veci(const int, const int);
+int dubinaStabla(const STABLO *);
 
 #endif
