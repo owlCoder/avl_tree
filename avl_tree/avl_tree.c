@@ -72,5 +72,8 @@ STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int broj)
     else
         return cvor;
 
+    cvor -> dubina = veci(dubinaStabla(cvor -> levi), dubinaStabla(cvor -> desni)) + 1;
+    int blc = balansirano(cvor);    
+    
     return cvor;
 }
