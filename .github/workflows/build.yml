@@ -27,4 +27,4 @@ jobs:
 
       # Build project
       - name: avl
-        run: sh ./compile_run.sh
+        run: sh ./test_skripta.sh
