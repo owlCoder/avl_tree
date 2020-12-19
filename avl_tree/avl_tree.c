@@ -74,6 +74,10 @@ STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int broj)
 
     cvor -> dubina = veci(dubinaStabla(cvor -> levi), dubinaStabla(cvor -> desni)) + 1;
     int blc = balansirano(cvor);    
+
+    if(blc > 1 && broj < cvor -> levi -> broj)
+        return desnaRotacija(cvor);
+    
     
     return cvor;
 }
