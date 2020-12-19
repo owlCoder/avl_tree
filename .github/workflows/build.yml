@@ -27,6 +27,4 @@ jobs:
 
       # Build project
       - name: avl
-        run: |
-          chmod +x test_skripta.sh
-          sh ./test_skripta.sh
+        run: sh ./compile_run_scripts/test_case1.sh
