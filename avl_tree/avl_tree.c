@@ -78,6 +78,8 @@ STABLO *AVL_dodaj_u_stablo(STABLO *cvor, int broj)
     if(blc > 1 && broj < cvor -> levi -> broj)
         return desnaRotacija(cvor);
     
-    
+    if(blc < -1 && broj > cvor -> desni -> broj)
+        return levaRotacija(cvor);
+
     return cvor;
 }
