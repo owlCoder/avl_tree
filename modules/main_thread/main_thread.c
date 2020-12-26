@@ -37,8 +37,8 @@ void main_thread__stdout_print(STABLO *koren, STABLO *avl_koren)
     print_tree(dubina_levog_podstabla(avl_koren), dubina_desnog_podstabla(avl_koren), "Posle");
 }
 
-void main_thread__clean_up(STABLO *koren, STABLO *avl_koren)
+void main_thread__clean_up(STABLO **koren, STABLO **avl_koren)
 {
-    brisanje_stabla(&koren);
-    brisanje_stabla(&avl_koren);
+    brisanje_stabla(koren);
+    brisanje_stabla(avl_koren);
 }
