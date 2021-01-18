@@ -16,8 +16,7 @@ read -r b
 clear
 option="${b}" 
 case ${option} in 
-    1)
-        chmod +x compile_run_scripts/test_case1.sh
+    1)  chmod +x compile_run_scripts/test_case1.sh
         sh ./compile_run_scripts/test_case1.sh
         ;;
     2)  chmod +x compile_run_scripts/test_case2.sh
